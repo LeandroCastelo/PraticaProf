@@ -1,0 +1,60 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.titulo-h1,
+h2,
+h3 {
+  font-family: Helvetica, sans-serif;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.4rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+span {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+.img-bitcoin {
+  width: 90%;
+  max-width: 300px;
+  display: block;
+  margin: 0 auto;
+  animation: rotateLogo 2s linear infinite;
+}
+
+.container-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card-moeda {
+  width: calc(100% / 3 - 60px);
+  max-width: 300px;
+  min-width: 200px;
+  height: 340px;
+  margin: 10px;
+  box-shadow: 10px 10px 20px #3d3d3d36;
+  border-radius: 20px;
+}
+
+@keyframes rotateLogo {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
